@@ -1,11 +1,29 @@
 'use client'
 
-import { useState, useRef } from 'react'
+import { useState, useRef, Fragment } from 'react'
+import type { StaticImageData } from 'next/image'
 import { Dialog, Transition } from '@headlessui/react'
 import Image from 'next/image'
-import VideoThumb from '@/public/video-modal-thumb.jpg'
 
-export default function VideoModal() {
+interface ModalVideoProps {
+  thumb: StaticImageData
+  thumbWidth: number
+  thumbHeight: number
+  thumbAlt: string
+  video: string
+  videoWidth: number
+  videoHeight: number
+}
+
+export default function ModalVideo({
+  thumb,
+  thumbWidth,
+  thumbHeight,
+  thumbAlt,
+  video,
+  videoWidth,
+  videoHeight,
+}: ModalVideoProps) {
   const [modalOpen, setModalOpen] = useState<boolean>(false)
   const videoRef = useRef<HTMLVideoElement>(null)
 
@@ -14,7 +32,7 @@ export default function VideoModal() {
 
       {/* Video thumbnail */}
       <button className="relative flex justify-center items-center focus:outline-none focus-visible:ring focus-visible:ring-indigo-300 rounded-3xl group" onClick={() => { setModalOpen(true) }} aria-label="Watch the video">
-        <Image className="rounded-3xl shadow-2xl transition-shadow duration-300 ease-in-out" src={VideoThumb} width={768} height={432} priority alt="Video modal thumbnail" />
+        <Image className="rounded-3xl shadow-2xl transition-shadow duration-300 ease-in-out" src={thumb} width={thumbWidth} height={thumbHeight} priority alt={thumbAlt} />
         {/* Play icon */}
         <svg className="absolute pointer-events-none group-hover:scale-110 transition-transform duration-300 ease-in-out" xmlns="http://www.w3.org/2000/svg" width="72" height="72">
           <circle className="fill-white" cx="36" cy="36" r="36" fillOpacity=".8" />
@@ -23,7 +41,7 @@ export default function VideoModal() {
       </button>
       {/* End: Video thumbnail */}
 
-      <Transition show={modalOpen} as="template" afterEnter={() => videoRef.current?.play()}>
+      <Transition show={modalOpen} as={Fragment} afterEnter={() => videoRef.current?.play()}>
         <Dialog initialFocus={videoRef} onClose={() => setModalOpen(false)}>
 
           {/* Modal backdrop */}
@@ -35,6 +53,7 @@ export default function VideoModal() {
             leave="transition ease-out duration-100"
             leaveFrom="opacity-100"
             leaveTo="opacity-0"
+            aria-hidden="true"
           />
           {/* End: Modal backdrop */}
 
@@ -50,8 +69,8 @@ export default function VideoModal() {
           >
             <div className="max-w-5xl mx-auto h-full flex items-center">
               <Dialog.Panel className="w-full max-h-full rounded-3xl shadow-2xl aspect-video bg-black overflow-hidden">
-                <video ref={videoRef} width="1920" height="1080" loop controls>
-                  <source src="/video.mp4" type="video/mp4" />
+                <video ref={videoRef} width={videoWidth} height={videoHeight} loop controls>
+                  <source src={video} type="video/mp4" />
                   Your browser does not support the video tag.
                 </video>
               </Dialog.Panel>
