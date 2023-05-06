@@ -46,7 +46,7 @@ export default function ModalVideo({
 
           {/* Modal backdrop */}
           <Transition.Child
-            className="fixed inset-0 z-10 bg-black bg-opacity-50 transition-opacity"
+            className="fixed inset-0 z-[99999] bg-black bg-opacity-50 transition-opacity"
             enter="transition ease-out duration-200"
             enterFrom="opacity-0"
             enterTo="opacity-100"
@@ -59,7 +59,7 @@ export default function ModalVideo({
 
           {/* Modal dialog */}
           <Transition.Child
-            className="fixed inset-0 z-10 flex p-6"
+            className="fixed inset-0 z-[99999] flex p-6"
             enter="transition ease-out duration-300"
             enterFrom="opacity-0 scale-75"
             enterTo="opacity-100 scale-100"
