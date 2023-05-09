@@ -28,7 +28,7 @@ export default function ModalVideo({
   const videoRef = useRef<HTMLVideoElement>(null)
 
   return (
-    <div>
+    <div className="flex justify-center">
 
       {/* Video thumbnail */}
       <button className="relative flex justify-center items-center focus:outline-none focus-visible:ring focus-visible:ring-indigo-300 rounded-3xl group" onClick={() => { setModalOpen(true) }} aria-label="Watch the video">

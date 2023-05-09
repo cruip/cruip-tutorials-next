@@ -1,4 +1,12 @@
+import { Inter } from 'next/font/google'
+import Banner from '@/components/banner'
 import './globals.css'
+
+const inter = Inter({
+  subsets: ['latin'],
+  variable: '--font-inter',
+  display: 'swap'
+})
 
 export const metadata = {
   title: 'Create Next App',
@@ -12,7 +20,21 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="min-h-screen flex justify-center items-center p-6">{children}</body>
+      <body className={`${inter.variable} font-inter antialiased h-screen px-6 py-6 md:py-8`}>
+        <div className="h-full flex flex-col justify-between before:h-6">
+          <main className="my-6">
+            <div className="w-full max-w-6xl mx-auto">
+              {children}
+            </div>
+          </main>
+          <footer className="h-6">
+            <div className="w-full max-w-6xl mx-auto">
+              <a className="text-xs text-slate-500 hover:text-slate-800 transition-colors duration-150" href="https://cruip.com">&copy;Cruip - Tailwind CSS templates</a>
+            </div>
+          </footer>
+          <Banner tutorialUrl="https://cruip.com/how-to-build-a-modal-video-component-with-tailwind-css-and-next-js/" downloadUrl="https://github.com/cruip/cruip-tutorials-next/blob/main/components/modal-video.tsx" />
+        </div>
+      </body>
     </html>
   )
 }
