@@ -4,7 +4,7 @@ import { useState } from 'react'
 
 interface PricingTabProps {
   yearly: boolean
-  popular: boolean
+  popular?: boolean
   planName: string
   price: {
     monthly: number
@@ -27,7 +27,7 @@ function PricingTab(props: PricingTabProps) {
           <div className="text-slate-900 dark:text-slate-200 font-semibold mb-1">{props.planName}</div>
           <div className="inline-flex items-baseline mb-2">
             <span className="text-slate-900 dark:text-slate-200 font-bold text-3xl">$</span>
-            <span className="text-slate-900 dark:text-slate-200 font-bold text-4xl">{props.price.monthly}</span>
+            <span className="text-slate-900 dark:text-slate-200 font-bold text-4xl">{props.yearly ? props.price.yearly : props.price.monthly}</span>
             <span className="text-slate-500 font-medium">/mo</span>
           </div>
           <div className="text-sm text-slate-500 mb-5">{props.planDescription}</div>
@@ -75,9 +75,8 @@ export default function PricingTabs() {
         {/* Pricing tab 1 */}
         <PricingTab
           yearly={yearly}
-          popular={false}
           planName="Essential"
-          price={{ monthly: 29, yearly: 35 }}
+          price={{ yearly: 29, monthly: 35 }}
           planDescription="There are many variations available, but the majority have suffered."
           features={[
             'Unlimited placeholder texts',
@@ -91,7 +90,7 @@ export default function PricingTabs() {
           yearly={yearly}
           popular={true}
           planName="Perform"
-          price={{ monthly: 49, yearly: 55 }}
+          price={{ yearly: 49, monthly: 55 }}
           planDescription="There are many variations available, but the majority have suffered."
           features={[
             'Unlimited placeholder texts',
@@ -104,9 +103,8 @@ export default function PricingTabs() {
         {/* Pricing tab 3 */}
         <PricingTab
           yearly={yearly}
-          popular={false}
           planName="Enterprise"
-          price={{ monthly: 79, yearly: 85 }}
+          price={{ yearly: 79, monthly: 85 }}
           planDescription="There are many variations available, but the majority have suffered."
           features={[
             'Unlimited placeholder texts',
