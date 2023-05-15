@@ -1,5 +1,4 @@
 import { Inter } from 'next/font/google'
-import Banner from '@/components/banner'
 import './globals.css'
 
 const inter = Inter({
@@ -32,7 +31,6 @@ export default function RootLayout({
               <a className="text-xs text-slate-500 hover:text-slate-800 transition-colors duration-150" href="https://cruip.com">&copy;Cruip - Tailwind CSS templates</a>
             </div>
           </footer>
-          <Banner tutorialUrl="https://cruip.com/how-to-build-a-modal-video-component-with-tailwind-css-and-next-js/" downloadUrl="https://github.com/cruip/cruip-tutorials-next/blob/main/components/modal-video.tsx" />
         </div>
       </body>
     </html>
