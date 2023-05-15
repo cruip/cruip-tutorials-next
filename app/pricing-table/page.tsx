@@ -1,12 +1,12 @@
 export const metadata = {
-  title: 'Pricing Tabs - Cruip Tutorials',
+  title: 'Pricing Table - Cruip Tutorials',
   description: 'Page description',
 }
 
-import PricingTabs from '@/components/pricing-tabs'
+import PricingTable from '@/components/pricing-table'
 
 export default function PricingTabsPage() {
   return (
-    <PricingTabs />
+    <PricingTable />
   )
 }

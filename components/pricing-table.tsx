@@ -53,7 +53,7 @@ function PricingTab(props: PricingTabProps) {
   )
 }
 
-export default function PricingTabs() {
+export default function PricingTable() {
   const [yearly, setYearly] = useState<boolean>(true)
 
   return (
