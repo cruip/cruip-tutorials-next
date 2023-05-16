@@ -1,8 +1,16 @@
-# cruip-tutorials-next
+# Cruip Tutorials made with Next.js and Tailwind CSS
 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Welcome to the repository of Cruip's guides & tutorials for Next.js. Here you will find the code for all the components we have developed and will develop, ready to be integrated into your projects.
+
+If you're new to our articles, we recommend taking a look here: [Tailwind CSS Tutorials](https://cruip.com/tutorials/). If you're new to Cruip's ecosystem, learn more about our [Tailwind CSS templates](https://cruip.com/).
+
+## Tutorial list
+
+- [How to Build a Modal Video Component with Tailwind CSS and Next.js](https://cruip.com/how-to-build-a-modal-video-component-with-tailwind-css-and-next-js/)
 
 ## Getting Started
+
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 First, run the development server:
 
