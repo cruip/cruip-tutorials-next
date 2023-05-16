@@ -1,6 +1,6 @@
 # Cruip Tutorials made with Next.js and Tailwind CSS
 
-Welcome to the repository of Cruip's guides & tutorials for Next.js. Here you will find the code for all the components we have developed and will develop, ready to be integrated into your projects.
+Welcome to the repository of Cruip's guides & tutorials for **Next.js**. Here you will find the code for all the components we have developed and will develop, made in **TypeScript**, and ready to be integrated into your projects.
 
 If you're new to our articles, we recommend taking a look here: [Tailwind CSS Tutorials](https://cruip.com/tutorials/). If you're new to Cruip's ecosystem, learn more about our [Tailwind CSS templates](https://cruip.com/).
 
