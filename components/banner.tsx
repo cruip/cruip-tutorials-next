@@ -16,7 +16,7 @@ export default function Banner({
   return (
     <>
       {bannerOpen && (
-        <div className="fixed bottom-0 right-0 w-full md:bottom-6 md:right-12 md:w-auto z-60">
+        <div className="fixed bottom-0 right-0 w-full md:bottom-6 md:right-12 md:w-auto z-50">
           <div className="bg-slate-800 text-sm p-3 md:rounded shadow flex justify-between">
             <div className="text-slate-500 inline-flex">
               <a className="font-medium hover:underline text-slate-300" href={tutorialUrl}>
