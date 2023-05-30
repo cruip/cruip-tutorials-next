@@ -7,6 +7,10 @@ If you're new to our articles, we recommend taking a look here: [Tailwind CSS Tu
 ## Tutorial list
 
 - [How to Build a Modal Video Component with Tailwind CSS and Next.js](https://cruip.com/how-to-build-a-modal-video-component-with-tailwind-css-and-next-js/)
+- [How to Create a Pricing Table with a Monthly/Yearly Toggle in Tailwind CSS and Next.js](https://cruip.com/how-to-create-a-pricing-table-with-a-monthly-yearly-toggle-in-tailwind-css-and-next-js/)
+- [How to Create a Beautiful Particle Animation with HTML Canvas](https://cruip.com/how-to-create-a-beautiful-particle-animation-with-html-canvas/)
+- [How to Create a Spotlight Card Hover Effect with Tailwind CSS](https://cruip.com/how-to-create-a-spotlight-card-hover-effect-with-tailwind-css/)
+- [How to Build a Fancy Testimonial Slider with Tailwind CSS and Next.js](https://cruip.com/how-to-build-a-fancy-testimonial-slider-with-tailwind-css-and-next-js/)
 
 ## Getting Started
 
