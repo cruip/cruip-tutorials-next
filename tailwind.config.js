@@ -10,6 +10,7 @@ module.exports = {
     extend: {
       fontFamily: {
         inter: ['var(--font-inter)', 'sans-serif'],
+        caveat: ['var(--font-caveat)', 'cursive'],
       },      
     },
   },
