@@ -18,9 +18,9 @@ const TutorialCard = () => {
                 <h2 className="text-base text-slate-600 text-center"></h2>
                 <Link
                   href={tutorial.href}
-                  className="mt-10 items-center justify-center w-full p-2.5 text-center text-white duration-200 bg-black border-2 border-black rounded-full nline-flex hover:bg-transparent hover:border-black hover:text-black focus:outline-none  focus-visible:outline-black text-sm focus-visible:ring-black  "
+                  className="mt-10 items-center justify-center w-full py-2.5 text-center text-white duration-200 bg-black border-2 border-black rounded-full nline-flex hover:bg-transparent hover:border-black hover:text-black focus:outline-none  focus-visible:outline-black text-sm focus-visible:ring-black  "
                 >
-                  View {tutorial.name}
+                  View
                 </Link>
               </div>
             </div>
