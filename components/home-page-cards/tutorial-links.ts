@@ -31,5 +31,9 @@ export type tutorials = {
       name: "Vertical Timelines",
       href: "/vertical-timelines",
     },
+    {
+      name: "Unconventional Tabs",
+      href: "/unconventional-tabs",
+    },
   ];
   
