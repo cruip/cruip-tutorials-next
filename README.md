@@ -14,6 +14,7 @@ If you're new to our articles, we recommend taking a look here: [Tailwind CSS Tu
 - [Using Tailwind CSS and Next.js to Create Animated and Accessible Tabs](https://cruip.com/using-tailwind-css-and-next-js-to-create-animated-and-accessible-tabs/)
 - [How to Add Custom Fonts in Next.js and Tailwind CSS Templates](https://cruip.com/how-to-add-custom-fonts-in-next-js-and-tailwind-css-templates/)
 - [How to Create a Feature Comparison Table with Tailwind CSS](https://cruip.com/how-to-create-a-feature-comparison-table-with-tailwind-css/)
+- [Building a Simple Animated Accordion Component with Tailwind CSS](https://cruip.com/building-a-simple-animated-accordion-component-with-tailwind-css/)
 
 ## Getting Started
 
