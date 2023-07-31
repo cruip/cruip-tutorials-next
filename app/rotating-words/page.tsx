@@ -1,12 +1,12 @@
 export const metadata = {
-  title: 'Rotating Words - Cruip Tutorials',
+  title: 'Sliding Text - Cruip Tutorials',
   description: 'Page description',
 }
 
 import RotatingWords from '@/components/rotating-words'
 import Banner from '@/components/banner'
 
-export default function ModalVideoPage() {
+export default function RotatingWordsPage() {
   return (
     <>
       <main className="relative min-h-screen flex flex-col justify-center bg-slate-900 overflow-hidden">
@@ -19,7 +19,7 @@ export default function ModalVideoPage() {
         </div>
       </main>
 
-      <Banner tutorialUrl="https://cruip.com/how-to-create-a-rotating-words-animation-with-tailwind-css/" downloadUrl="https://github.com/cruip/cruip-tutorials-next/blob/main/components/rotating-words.tsx" />
+      <Banner tutorialUrl="https://cruip.com/creating-a-sliding-text-animation-with-tailwind-css/" downloadUrl="https://github.com/cruip/cruip-tutorials-next/blob/main/components/rotating-words.tsx" />
     </>
   )
 }
