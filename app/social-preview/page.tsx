@@ -27,7 +27,7 @@ export const metadata = {
 
 import Banner from '@/components/banner'
 
-export default function SocialMetadataPage() {
+export default function SocialPreviewPage() {
   return (
     <>
       <main className="relative min-h-screen flex flex-col justify-center bg-slate-900 overflow-hidden">
