@@ -7,7 +7,7 @@ export const metadata = {
     description:
       "A guide on how to optimize SEO with static and dynamic metatags using Next.js 13's new Metadata API.",
     type: "article",
-    url: "https://cruip-tutorials-next.vercel.app/blog/nextjs13-seo",
+    url: "https://cruip-tutorials-next.vercel.app/social-preview",
     images: [
       {
         url: "https://cruip-tutorials-next.vercel.app/api/og?title=Generate Dynamic Open Graph and Twitter Images in Next.js",
