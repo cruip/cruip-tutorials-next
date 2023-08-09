@@ -1,14 +1,8 @@
 import { ImageResponse } from 'next/server';
-// App router includes @vercel/og.
-// No need to install it.
  
 export const runtime = 'edge';
  
 export async function GET(request: Request) {
-  const interBold = fetch(
-    new URL('../../../public/Inter-Bold.ttf', import.meta.url)
-  ).then((res) => res.arrayBuffer());
-
   const interExtrabold = fetch(
     new URL('../../../public/Inter-ExtraBold.ttf', import.meta.url)
   ).then((res) => res.arrayBuffer());
@@ -51,62 +45,17 @@ export async function GET(request: Request) {
           >
             {title}
           </div>
-          <div
-            style={{
-              display: 'flex',
-            }}           
-          >
-            <img
-              width="44"
-              height="44"
-              src={`https://cruip-tutorials-next.vercel.app/author.jpg`}
-              style={{
-                borderRadius: 9999,
-              }}
-            />
-            <div
-              style={{
-                display: 'flex',
-                flexDirection: 'column',
-                marginLeft: 16,
-              }}
-            >
-              <div
-                style={{
-                  fontSize: 18,
-                  fontWeight: 700,
-                  color: 'white',
-                  whiteSpace: 'pre-wrap',
-                  marginBottom: 4,
-                }}          
-              >
-                Pasquale Vitiello
-              </div>
-              <div
-                style={{
-                  fontSize: 14,
-                  fontWeight: 700,
-                  color: 'white',
-                  opacity: 0.7,
-                  whiteSpace: 'pre-wrap',
-                }}
-              >
-                Co-Founder Cruip
-              </div>          
-            </div>
-          </div>
+          <img
+            width="203"
+            height="44"
+            src={`https://cruip-tutorials-next.vercel.app/author.png`}
+          />
         </div>
       ),
       {
         width: 1200,
         height: 630,
         fonts: [
-          {
-            name: 'Inter',
-            data: await interBold,
-            style: 'normal',
-            weight: 700,
-          },
           {
             name: 'Inter',
             data: await interExtrabold,
