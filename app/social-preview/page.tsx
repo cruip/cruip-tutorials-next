@@ -41,7 +41,7 @@ export default function SocialPreviewPage() {
         </div>
       </main>
 
-      <Banner tutorialUrl="https://cruip.com/generate-dynamic-open-graph-and-twitter-images-in-nextjs/" downloadUrl="https://github.com/cruip/cruip-tutorials-next/blob/main/app/social-preview/page.tsx" />
+      <Banner tutorialUrl="https://cruip.com/generate-dynamic-open-graph-and-twitter-images-in-nextjs/" downloadUrl="https://github.com/cruip/cruip-tutorials-next/blob/main/app/api/og/route.tsx" />
     </>
   )
 }
