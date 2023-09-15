@@ -10,7 +10,7 @@ import Card03 from '@/public/card-03.png'
 import Spotlight, { SpotlightCard } from '@/components/spotlight'
 import Banner from '@/components/banner'
 
-export default function PricingTabsPage() {
+export default function SpotlightPage() {
   return (
     <>
       <main className="relative min-h-screen flex flex-col justify-center bg-slate-900 overflow-hidden">

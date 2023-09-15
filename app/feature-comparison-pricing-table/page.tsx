@@ -6,7 +6,7 @@ export const metadata = {
 import FeatureComparisonPricing from '@/components/feature-comparison-pricing'
 import Banner from '@/components/banner'
 
-export default function PricingTabsPage() {
+export default function FeatureComparisonPricingPage() {
   return (
     <>
       <main className="relative min-h-screen flex flex-col justify-center bg-white overflow-hidden">

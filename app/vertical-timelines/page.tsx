@@ -8,7 +8,7 @@ import VerticalTimeline02 from '@/components/vertical-timeline-02'
 import VerticalTimeline03 from '@/components/vertical-timeline-03'
 import Banner from '@/components/banner'
 
-export default function PricingTabsPage() {
+export default function VerticalTimelinePage() {
 
   const timelineItems01 = [
     {
