@@ -30,7 +30,7 @@ export default function Spotlight({
     return () => {
       window.removeEventListener('resize', initContainer)
     }
-  }, [setBoxes])  
+  }, [boxes])  
 
   useEffect(() => {
     onMouseMove()
