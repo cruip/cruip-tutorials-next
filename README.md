@@ -19,6 +19,7 @@ If you're new to our articles, we recommend taking a look here: [Tailwind CSS Tu
 - [Create an Infinite Horizontal Scroll Animation with Tailwind CSS](https://cruip.com/create-an-infinite-horizontal-scroll-animation-with-tailwind-css/)
 - [How to Create a Sticky On Scroll Effect with JavaScript](https://cruip.com/how-to-create-a-sticky-on-scroll-effect-with-javascript/)
 - [Create a Carousel with Progress Indicators using Tailwind and Next.js](https://cruip.com/create-a-carousel-with-progress-indicators-using-tailwind-and-nextjs/)
+- [Styling the Active Link with Next.js and Tailwind CSS ](https://cruip.com/styling-the-active-link-with-nextjs-and-tailwind-css/)
 
 ## Getting Started
 
