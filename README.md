@@ -20,6 +20,7 @@ If you're new to our articles, we recommend taking a look here: [Tailwind CSS Tu
 - [How to Create a Sticky On Scroll Effect with JavaScript](https://cruip.com/how-to-create-a-sticky-on-scroll-effect-with-javascript/)
 - [Create a Carousel with Progress Indicators using Tailwind and Next.js](https://cruip.com/create-a-carousel-with-progress-indicators-using-tailwind-and-nextjs/)
 - [Styling the Active Link with Next.js and Tailwind CSS ](https://cruip.com/styling-the-active-link-with-nextjs-and-tailwind-css/)
+- [Building a Documentation Search Modal with Next.js](https://cruip.com/building-a-documentation-search-modal-with-nextjs/)
 
 ## Getting Started
 
