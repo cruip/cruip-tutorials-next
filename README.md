@@ -21,6 +21,7 @@ If you're new to our articles, we recommend taking a look here: [Tailwind CSS Tu
 - [Create a Carousel with Progress Indicators using Tailwind and Next.js](https://cruip.com/create-a-carousel-with-progress-indicators-using-tailwind-and-nextjs/)
 - [Styling the Active Link with Next.js and Tailwind CSS ](https://cruip.com/styling-the-active-link-with-nextjs-and-tailwind-css/)
 - [Building a Documentation Search Modal with Next.js](https://cruip.com/building-a-documentation-search-modal-with-nextjs/)
+- [Blur Reveal Effect with Framer Motion and Tailwind CSS](https://cruip.com/blur-reveal-effect-with-framer-motion-and-tailwind-css/)
 
 ## Getting Started
 

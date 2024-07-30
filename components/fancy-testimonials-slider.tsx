@@ -42,6 +42,7 @@ export default function FancyTestimonialsSlider({ testimonials }: { testimonials
 
             {testimonials.map((testimonial, index) => (
               <Transition
+                as="div"
                 key={index}
                 show={active === index}
                 className="absolute inset-0 h-full -z-10"
@@ -51,6 +52,7 @@ export default function FancyTestimonialsSlider({ testimonials }: { testimonials
                 leave="transition ease-[cubic-bezier(0.68,-0.3,0.32,1)] duration-700"
                 leaveFrom="opacity-100 rotate-0"
                 leaveTo="opacity-0 rotate-[60deg]"
+                beforeEnter={() => heightFix()}
               >
                 <Image className="relative top-11 left-1/2 -translate-x-1/2 rounded-full" src={testimonial.img} width={56} height={56} alt={testimonial.name} />
               </Transition>
