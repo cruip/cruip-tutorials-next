@@ -18,7 +18,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className="scroll-smooth">
       <body className={`${inter.variable} relative font-inter antialiased`}>
         {children}
         <footer className="absolute left-6 right-6 md:left-12 md:right-auto bottom-4 md:bottom-8 text-center md:text-left">
