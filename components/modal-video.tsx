@@ -2,7 +2,7 @@
 
 import { useState, useRef, Fragment } from 'react'
 import type { StaticImageData } from 'next/image'
-import { Dialog, Transition, TransitionChild } from '@headlessui/react'
+import { Dialog, DialogPanel, Transition, TransitionChild } from '@headlessui/react'
 import Image from 'next/image'
 
 interface ModalVideoProps {
@@ -70,12 +70,12 @@ export default function ModalVideo({
             leaveTo="opacity-0 scale-75"
           >
             <div className="max-w-5xl mx-auto h-full flex items-center">
-              <Dialog.Panel className="w-full max-h-full rounded-3xl shadow-2xl aspect-video bg-black overflow-hidden">
+              <DialogPanel className="w-full max-h-full rounded-3xl shadow-2xl aspect-video bg-black overflow-hidden">
                 <video ref={videoRef} width={videoWidth} height={videoHeight} loop controls>
                   <source src={video} type="video/mp4" />
                   Your browser does not support the video tag.
                 </video>
-              </Dialog.Panel>
+              </DialogPanel>
             </div>
           </TransitionChild>
           {/* End: Modal dialog */}
