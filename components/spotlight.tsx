@@ -1,7 +1,7 @@
 'use client'
 
 import React, { useRef, useState, useEffect } from 'react'
-import MousePosition from './utils/mouse-position'
+import useMousePosition from './utils/mouse-position'
 
 type SpotlightProps = {
   children: React.ReactNode
@@ -14,7 +14,7 @@ export default function Spotlight({
 }: SpotlightProps) {
 
   const containerRef = useRef<HTMLDivElement>(null)
-  const mousePosition = MousePosition()
+  const mousePosition = useMousePosition()
   const mouse = useRef<{ x: number; y: number }>({ x: 0, y: 0 })
   const containerSize = useRef<{ w: number; h: number }>({ w: 0, h: 0 })
   const [boxes, setBoxes] = useState<Array<HTMLElement>>([])

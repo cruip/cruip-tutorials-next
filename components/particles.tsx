@@ -1,7 +1,7 @@
 'use client'
 
 import React, { useRef, useEffect } from 'react'
-import MousePosition from './utils/mouse-position'
+import useMousePosition from './utils/mouse-position'
 
 interface ParticlesProps {
   className?: string
@@ -20,7 +20,7 @@ export default function Particles({
   const canvasContainerRef = useRef<HTMLDivElement>(null)
   const context = useRef<CanvasRenderingContext2D | null>(null)
   const circles = useRef<any[]>([])
-  const mousePosition = MousePosition()
+  const mousePosition = useMousePosition()
   const mouse = useRef<{ x: number; y: number }>({ x: 0, y: 0 })
   const canvasSize = useRef<{ w: number; h: number }>({ w: 0, h: 0 })
   const dpr = typeof window !== 'undefined' ? window.devicePixelRatio : 1
