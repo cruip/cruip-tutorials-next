@@ -15,16 +15,16 @@ export default function NavigationMenu({
   const [animationProps, setAnimationProps] = useState({
     left: 0,
     width: 0,
-  });  
+  });
 
   // check if the url has a hash and if so, set the active link
   useEffect(() => {
     const url = window.location.hash;
     if (url) {
       const link = url.replace("#", "");
-      setActiveLink(link);      
+      setActiveLink(link);
     }
-  }, []);  
+  }, []);
 
   // update the position and width of the active link underline
   useEffect(() => {
@@ -40,16 +40,16 @@ export default function NavigationMenu({
     };
 
     updateActiveLink();
-    window.addEventListener('resize', updateActiveLink);
+    window.addEventListener("resize", updateActiveLink);
 
     return () => {
-      window.removeEventListener('resize', updateActiveLink);
+      window.removeEventListener("resize", updateActiveLink);
     };
-  }, [activeLink]);  
+  }, [activeLink]);
 
   return (
-    <header className="fixed top-2 md:top-6 w-full z-30">
-      <div className="max-w-5xl mx-auto px-4 sm:px-6">
+    <header className="fixed top-2 z-30 w-full md:top-6">
+      <div className="mx-auto max-w-5xl px-4 sm:px-6">
         <div className="flex h-14 w-full items-center justify-between gap-3 rounded-full border border-gray-100 bg-white px-3 shadow-lg shadow-black/[0.04]">
           <div className="flex flex-1 items-center">
             <a
@@ -72,8 +72,8 @@ export default function NavigationMenu({
             </a>
           </div>
           <nav className="relative flex justify-center">
-            <motion.div 
-              className="absolute left-0 inset-y-0 bg-indigo-100 rounded-full"
+            <motion.div
+              className="absolute inset-y-0 left-0 rounded-full bg-indigo-100"
               aria-hidden="true"
               animate={{
                 ...animationProps,

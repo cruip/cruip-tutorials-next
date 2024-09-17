@@ -22,6 +22,7 @@ If you're new to our articles, we recommend taking a look here: [Tailwind CSS Tu
 - [Styling the Active Link with Next.js and Tailwind CSS ](https://cruip.com/styling-the-active-link-with-nextjs-and-tailwind-css/)
 - [Building a Documentation Search Modal with Next.js](https://cruip.com/building-a-documentation-search-modal-with-nextjs/)
 - [Active Link Animation with Tailwind CSS and Framer Motion](https://cruip.com/active-link-animation-with-tailwind-css-and-framer-motion/)
+- [How to Create a True Masonry with Next.js](https://cruip.com/how-to-create-a-true-masonry-with-nextjs/)
 
 ## Getting Started
 

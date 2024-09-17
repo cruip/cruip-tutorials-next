@@ -1,29 +1,35 @@
 "use client";
 
-import { createContext, Dispatch, SetStateAction, useContext, useState } from "react";
+import {
+  createContext,
+  Dispatch,
+  SetStateAction,
+  useContext,
+  useState,
+} from "react";
 
 type ContextProps = {
-  activeLink: string,
-  setActiveLink: Dispatch<SetStateAction<string>>,
-}
+  activeLink: string;
+  setActiveLink: Dispatch<SetStateAction<string>>;
+};
 
 const NavContext = createContext<ContextProps>({
   activeLink: "",
   setActiveLink: (): string => "",
-})
+});
 
 export default function NavProvider({
-  children
+  children,
 }: {
-  children: React.ReactNode
-}) {  
-  const [activeLink, setActiveLink] = useState<string>("")
+  children: React.ReactNode;
+}) {
+  const [activeLink, setActiveLink] = useState<string>("");
 
   return (
-    <NavContext.Provider value={{ activeLink, setActiveLink}}>
+    <NavContext.Provider value={{ activeLink, setActiveLink }}>
       {children}
     </NavContext.Provider>
-  )
+  );
 }
 
-export const useNavProvider = () => useContext(NavContext)
+export const useNavProvider = () => useContext(NavContext);

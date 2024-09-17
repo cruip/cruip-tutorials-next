@@ -11,21 +11,21 @@ import Banner from "@/components/banner";
 const sections = [
   {
     title: "Home",
-    slug: "home"
+    slug: "home",
   },
   {
     title: "Customers",
-    slug: "customers"
+    slug: "customers",
   },
   {
     title: "Partners",
-    slug: "partners"
+    slug: "partners",
   },
   {
     title: "Team",
-    slug: "team"
-  }
-];  
+    slug: "team",
+  },
+];
 
 export default function SlidingActiveLinkPage() {
   return (
@@ -33,11 +33,11 @@ export default function SlidingActiveLinkPage() {
       <main className="relative flex min-h-screen flex-col overflow-hidden bg-slate-50">
         <NavProvider>
           <NavigationMenu links={sections} />
-          <div className="w-full max-w-5xl mx-auto px-4 md:px-6">
+          <div className="mx-auto w-full max-w-5xl px-4 md:px-6">
             {sections.map((section) => (
               <Section key={section.slug} section={section} />
             ))}
-          </div> 
+          </div>
         </NavProvider>
       </main>
 

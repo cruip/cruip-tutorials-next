@@ -26,7 +26,7 @@ export default function PageSection({
     <section
       id={section.slug}
       ref={ref}
-      className="h-screen flex justify-center items-center"
+      className="flex h-screen items-center justify-center"
     >
       <h2 className="text-4xl font-bold text-slate-300">{section.title}</h2>
     </section>

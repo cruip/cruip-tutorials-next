@@ -1,13 +1,12 @@
 export const metadata = {
-  title: 'Animated Accordion - Cruip Tutorials',
-  description: 'Page description',
-}
+  title: "Animated Accordion - Cruip Tutorials",
+  description: "Page description",
+};
 
-import Accordion from '@/components/accordion'
-import Banner from '@/components/banner'
+import Accordion from "@/components/accordion";
+import Banner from "@/components/banner";
 
 export default function AnimatedAccordionPage() {
-
   const faqs = [
     {
       title: "What are the advantages of your service?",
@@ -15,7 +14,8 @@ export default function AnimatedAccordionPage() {
       active: false,
     },
     {
-      title: "Are there any fees or commissions in addition to the monthly subscription?",
+      title:
+        "Are there any fees or commissions in addition to the monthly subscription?",
       text: "If you go over your organisations or user limit, a member of the team will reach out about bespoke pricing. In the meantime, our collaborative features won't appear in accounts or users that are over the 100-account or 1,000-user limit.",
       active: false,
     },
@@ -44,27 +44,33 @@ export default function AnimatedAccordionPage() {
       text: "If you go over your organisations or user limit, a member of the team will reach out about bespoke pricing. In the meantime, our collaborative features won't appear in accounts or users that are over the 100-account or 1,000-user limit.",
       active: false,
     },
-  ]
+  ];
 
   return (
     <>
-      <main className="relative min-h-screen flex flex-col justify-center bg-slate-50 overflow-hidden">
-        <div className="w-full max-w-2xl mx-auto px-4 md:px-6 py-24">
-
-          <h1 className="text-2xl font-bold text-slate-900 mb-4">FAQs</h1>
+      <main className="relative flex min-h-screen flex-col justify-center overflow-hidden bg-slate-50">
+        <div className="mx-auto w-full max-w-2xl px-4 py-24 md:px-6">
+          <h1 className="mb-4 text-2xl font-bold text-slate-900">FAQs</h1>
 
           <div className="divide-y divide-slate-200">
             {faqs.map((faq, index) => (
-              <Accordion key={index} title={faq.title} id={`faqs-${index}`} active={faq.active}>
+              <Accordion
+                key={index}
+                title={faq.title}
+                id={`faqs-${index}`}
+                active={faq.active}
+              >
                 {faq.text}
               </Accordion>
             ))}
           </div>
-
         </div>
       </main>
 
-      <Banner tutorialUrl="https://cruip.com/building-a-simple-animated-accordion-component-with-tailwind-css/" downloadUrl="https://github.com/cruip/cruip-tutorials-next/blob/main/components/accordion.tsx" />
+      <Banner
+        tutorialUrl="https://cruip.com/building-a-simple-animated-accordion-component-with-tailwind-css/"
+        downloadUrl="https://github.com/cruip/cruip-tutorials-next/blob/main/components/accordion.tsx"
+      />
     </>
-  )
+  );
 }
