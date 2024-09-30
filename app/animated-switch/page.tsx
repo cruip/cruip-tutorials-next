@@ -28,8 +28,8 @@ export default function AnimatedSwitchPage() {
       </main>
 
       <Banner
-        tutorialUrl="https://cruip.com/using-tailwind-css-and-next-js-to-create-animated-and-accessible-tabs/"
-        downloadUrl="https://github.com/cruip/cruip-tutorials-next/blob/main/components/unconventional-tabs.tsx"
+        tutorialUrl="https://cruip.com/animate-a-react-switch-toggle-with-framer-motion/"
+        downloadUrl="https://github.com/cruip/cruip-tutorials-next/blob/main/components/switch.tsx"
       />
     </>
   );
