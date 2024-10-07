@@ -25,6 +25,7 @@ If you're new to our articles, we recommend taking a look here: [Tailwind CSS Tu
 - [How to Create a True Masonry with Next.js](https://cruip.com/how-to-create-a-true-masonry-with-nextjs/)
 - [4 Examples of Dropdown Menus with Tailwind CSS and Radix UI](https://cruip.com/4-examples-of-dropdown-menus-with-tailwind-css-and-radix-ui/)
 - [Animate a React Switch Toggle with Framer Motion](https://cruip.com/animate-a-react-switch-toggle-with-framer-motion/)
+- [Toggle Password Visibility with Tailwind CSS and Next.js](https://cruip.com/toggle-password-visibility-with-tailwind-css-and-nextjs/)
 
 ## Getting Started
 
