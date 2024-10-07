@@ -6,7 +6,7 @@ import { Eye, EyeOff } from "lucide-react";
 export default function PasswordField() {
   const [isVisible, setIsVisible] = useState(false);
 
-  const toggleVisibility = () => setIsVisible(!isVisible);
+  const toggleVisibility = () => setIsVisible(prevState => !prevState);
 
   return (
     <div className="relative">
