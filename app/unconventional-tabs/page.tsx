@@ -9,34 +9,34 @@ import Tab0Image3 from "@/public/tabs-image-03.jpg";
 import UnconventionalTabs from "@/components/unconventional-tabs";
 import Banner from "@/components/banner";
 
-export default function UnconventionalTabsPage() {
-  const tabs = [
-    {
-      title: "Lassen Peak",
-      img: TabImage01,
-      tag: "Mountain",
-      excerpt:
-        "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
-      link: "#0",
-    },
-    {
-      title: "Mount Shasta",
-      img: Tab0Image2,
-      tag: "Mountain",
-      excerpt:
-        "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
-      link: "#0",
-    },
-    {
-      title: "Eureka Peak",
-      img: Tab0Image3,
-      tag: "Mountain",
-      excerpt:
-        "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
-      link: "#0",
-    },
-  ];
+const tabs = [
+  {
+    title: "Lassen Peak",
+    img: TabImage01,
+    tag: "Mountain",
+    excerpt:
+      "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+    link: "#0",
+  },
+  {
+    title: "Mount Shasta",
+    img: Tab0Image2,
+    tag: "Mountain",
+    excerpt:
+      "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+    link: "#0",
+  },
+  {
+    title: "Eureka Peak",
+    img: Tab0Image3,
+    tag: "Mountain",
+    excerpt:
+      "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+    link: "#0",
+  },
+];
 
+export default function UnconventionalTabsPage() {
   return (
     <>
       <main className="relative flex min-h-screen flex-col justify-center overflow-hidden bg-white">
