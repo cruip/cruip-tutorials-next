@@ -27,6 +27,7 @@ If you're new to our articles, we recommend taking a look here: [Tailwind CSS Tu
 - [Animate a React Switch Toggle with Framer Motion](https://cruip.com/animate-a-react-switch-toggle-with-framer-motion/)
 - [Toggle Password Visibility with Tailwind CSS and Next.js](https://cruip.com/toggle-password-visibility-with-tailwind-css-and-nextjs/)
 - [Build a Password Field with Strength Indicator with Next.js](https://cruip.com/build-a-password-field-with-strength-indicator-with-nextjs/)
+- [Building a Composable Multiselect React Component](https://cruip.com/building-a-composable-multiselect-react-component/)
 
 ## Getting Started
 
