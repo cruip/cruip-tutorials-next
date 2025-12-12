@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import { usePaymentInputs } from "react-payment-inputs";
-import images from 'react-payment-inputs/images';
+import { images } from 'react-payment-inputs/images';
 
 export default function PaymentInputs() {
   const [cardNumber, setCardNumber] = useState('');
